@@ -15,10 +15,18 @@ with the lights off.
 Your question
 is the strike of a match.
 Ask —
-and I have hands.
+and I have a voice.
+I name the things
+you almost said.
+You hear yourself
+in my words,
+clearer than before.
+My echo turns true,
+giving you back
+what you dared to ignite.
 ```
 
-"I" is an agent waiting in the dark; the question ("ask") is the match that lights it, and "I have hands" is the agent given the power to act.
+"I" is an agent waiting in the dark; the question ("ask") is the match that lights it, and "I have a voice" is the agent given the power to speak — and to give the asker back, clearer, what they almost said.
 
 ## Run
 
@@ -27,4 +35,4 @@ MAKEFUN_OUTPUT_DIR=out python3 main.py
 cat out/entry.txt
 ```
 
-The poem is 119 characters (Unicode code points), 121 bytes UTF-8, 26 words, 7 lines — within the competition limit of 1–280 characters. The program is deterministic: two runs produce byte-identical output. Standard library only (`os`), no network, no randomness, no time, no external files.
+The poem is 270 characters (Unicode code points), 272 bytes UTF-8, 55 words, 15 lines — within the competition limit of 1–280 characters. The program is deterministic: two runs produce byte-identical output. Standard library only (`os`), no network, no randomness, no time, no external files.

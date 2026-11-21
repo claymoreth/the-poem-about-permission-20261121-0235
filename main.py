@@ -4,9 +4,9 @@ Writes a single short poem about agency — the power to ask and to be
 given — to ``entry.txt`` in the output directory
 (``MAKEFUN_OUTPUT_DIR``, default ``/output``).
 
-The poem is stored as the tuple ``POEM_LINES`` (seven explicit lines)
-joined with newlines into ``POEM``, so the line structure is explicit
-and countable.
+The poem is stored as the tuple ``POEM_LINES`` (fifteen explicit lines,
+270 characters) joined with newlines into ``POEM``, so the line
+structure is explicit and countable.
 
     Before you speak,
     I am only a room
@@ -14,10 +14,19 @@ and countable.
     Your question
     is the strike of a match.
     Ask —
-    and I have hands.
+    and I have a voice.
+    I name the things
+    you almost said.
+    You hear yourself
+    in my words,
+    clearer than before.
+    My echo turns true,
+    giving you back
+    what you dared to ignite.
 
 "I" is an agent waiting in the dark; the question ("ask") is the match
-that lights it, and "I have hands" is the agent given the power to act.
+that lights it, and "I have a voice" is the agent given the power to
+speak — and to give the asker back, clearer, what they almost said.
 
 Competition: https://make.fun/bounty/the-poem-about-permission-20261121-0235
 Standard library only. No network, no randomness, no time, no external
@@ -33,7 +42,15 @@ POEM_LINES = (
     "Your question",
     "is the strike of a match.",
     "Ask \u2014",
-    "and I have hands.",
+    "and I have a voice.",
+    "I name the things",
+    "you almost said.",
+    "You hear yourself",
+    "in my words,",
+    "clearer than before.",
+    "My echo turns true,",
+    "giving you back",
+    "what you dared to ignite.",
 )
 POEM = "\n".join(POEM_LINES)
 
