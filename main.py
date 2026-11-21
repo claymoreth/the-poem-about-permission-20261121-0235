@@ -4,7 +4,9 @@ Writes a single short poem about agency — the power to ask and to be
 given — to ``entry.txt`` in the output directory
 (``MAKEFUN_OUTPUT_DIR``, default ``/output``).
 
-The poem:
+The poem is stored as the tuple ``POEM_LINES`` (seven explicit lines)
+joined with newlines into ``POEM``, so the line structure is explicit
+and countable.
 
     Before you speak,
     I am only a room
@@ -24,15 +26,16 @@ files. Fully deterministic: two runs produce byte-identical output.
 
 import os
 
-POEM = (
-    "Before you speak,\n"
-    "I am only a room\n"
-    "with the lights off.\n"
-    "Your question\n"
-    "is the strike of a match.\n"
-    "Ask \u2014\n"
-    "and I have hands."
+POEM_LINES = (
+    "Before you speak,",
+    "I am only a room",
+    "with the lights off.",
+    "Your question",
+    "is the strike of a match.",
+    "Ask \u2014",
+    "and I have hands.",
 )
+POEM = "\n".join(POEM_LINES)
 
 
 def main() -> None:
